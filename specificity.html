@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      .content {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 10px !important;
+      }
+
+      p {
+        font-size: 20px !important;
+      }
+
+      #content {
+        font-size: 20px;
+      }
+
+      .container p.content {
+        font-size: 34px;
+      }
+
+      .container p {
+        font-size: 50px;
+      }
+
+      ul li::selection {
+        font-size: 50px;
+        background-color: red;
+      }
+
+      a:visited {
+
+      }
+
+      button:disabled {
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="content" id="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eveniet cum
+        voluptatibus facere voluptatum laborum quam voluptatem nesciunt
+        asperiores enim! Laudantium in omnis, minus doloribus repellendus qui
+        quasi. Aperiam, consequatur!
+      </p>
+      <ul class="un-order-list">
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          eum magni quos incidunt repellat nemo repellendus modi deserunt
+          officiis impedit! Explicabo ab distinctio delectus inventore
+          reprehenderit, aspernatur hic soluta debitis.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          eum magni quos incidunt repellat nemo repellendus modi deserunt
+          officiis impedit! Explicabo ab distinctio delectus inventore
+          reprehenderit, aspernatur hic soluta debitis.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          eum magni quos incidunt repellat nemo repellendus modi deserunt
+          officiis impedit! Explicabo ab distinctio delectus inventore
+          reprehenderit, aspernatur hic soluta debitis.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
