@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- contact form -->
+    <form>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        placeholder="Enter username"
+        minlength="5"
+        maxlength="10"
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" /> Male<sup>3</sup>
+      <input type="radio" name="gender" value="female" /> Female<br /><br />
+
+      <label for="hobbies">Hobbies:</label><br />
+      <input type="checkbox" name="hobbies" value="reading" /> Reading<br />
+      <input type="checkbox" name="hobbies" value="sports" /> Sports<br /><br />
+
+      <label for="bio">Bio:</label><br />
+      <textarea id="bio" name="bio" rows="1" cols="30" placeholder="enter bio">Description</textarea><br /><br />
+        <label for="country">Country: </label>
+      <select name="country" id="country">
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+      </select> <br>
+
+      <label for="phone"></label><br />
+      <input
+        type="text"
+        name="phone"
+        placeholder="Enter phone number"
+        required
+        pattern="[0-9]{10}"
+      />
+      <input type="submit" value="Register" />
+      <button type="reset">Register</button>
+    </form>
+  </body>
+</html>
