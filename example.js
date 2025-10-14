@@ -10,8 +10,8 @@ for (var i = 0; i < 5; i++) {
   }
 }
 
-//multi-paradigm
-// imperative way
+/* multi-paradigm
+ imperative way */
 for (var i = 0; i < 5; i++) {
   console.log("hello suman", i);
 }
