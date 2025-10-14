@@ -1,12 +1,20 @@
 // variablename contains only letters, numbers, underscore(_), $. And don't not start with number.
 
-var i = 0; // bad practice
-var isTure = true;
+// var i = 0; // bad practice
+var isTrue = true;
 var wasTure = true;
-var isPopUpOpen = true;
+var isPopUpOpen;
+
+// i = 'i';
+
+isPopUpOpen = null;
+
+console.log(isPopUpOpen, typeof i);
 
 var name = suman = 'suman';
 
+var name = 'suman'
+var suman = 'suman'
 
 var covertStringIntoBoolean = () => {}
 
@@ -16,7 +24,16 @@ if (isPopUpOpen) {
     console.log('popup is opened');
 }
 
-// public name: string = 'suman';
+var i
+console.log(i)
+i = 0;
+// const i = 0;
+
+
+
+// java variable declaration
+// public name: string;
+// name  = 'suman';
 
 
 
