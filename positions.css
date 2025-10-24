@@ -10,7 +10,8 @@ body {
 }
 
 .inner-container {
-    width: 100%;
+    position: relative;
+    width: 100px;
     height: 100px;
     background-color: blue;
 }
