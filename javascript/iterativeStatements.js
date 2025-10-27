@@ -35,4 +35,28 @@ for (x = 0; x < 3; x++) {
 }
 console.log(output);
 
+// for in loop
 
+let arr = [10,20,30,40,50];
+for (var i = 0; i < arr.length; i++) {
+  console.log("arr",i, arr[i]);
+}
+
+for(let j in arr) {
+    console.log('for in', j,arr[j])
+}
+
+// for of loop
+for(let value of arr) {
+    console.log('for of',value)
+}
+
+var object = {
+    name: "suman",
+  id: 1,
+  isReactDeveloper: true,
+}
+
+for(let [key,value] of Object.entries(object)) {
+    console.log('objValue',key, value, Object.entries(object))
+}
