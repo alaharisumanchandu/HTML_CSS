@@ -1,6 +1,6 @@
 var isTure = 1 || 0;
 // if else blocks
-if (isTure ===true){
+if (isTure == true) {
   console.log("true");
   console.log("conditional stattements");
 } else {
@@ -24,7 +24,7 @@ if (number > 0) {
 
 var a = 2;
 var b = 3;
-var operator = '+'; // '+', '-', '/', '*'
+var operator = '-'; // '+', '-', '/', '*'
 
 if (operator === '+') {
     console.log(a+b);
@@ -41,7 +41,7 @@ if (operator === '+') {
 // switch case 
 
 switch (operator) {
-  case '+':
+  case '+': 
     console.log(a+b);
     break;
     case '-':

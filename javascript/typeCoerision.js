@@ -24,3 +24,4 @@ if('sum' && 0) {
 var input = prompt('What is Name?');
 console.log('input',input + input);
 
+console.log('suman' + 'chandu');

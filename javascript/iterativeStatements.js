@@ -1,9 +1,9 @@
 // for loop
-for (var i = 0; i <= 5; i++) {
-  console.log("number", i);
+for (var it = 0; it <= 5; it++) {
+  console.log("number", it);
 }
 
-console.log("after", i);
+console.log("after", it);
 
 // while loop
 var j = 5;
@@ -37,26 +37,31 @@ console.log(output);
 
 // for in loop
 
-let arr = [10,20,30,40,50];
-for (var i = 0; i < arr.length; i++) {
-  console.log("arr",i, arr[i]);
+let arr = [10, 20, 30, 40, 50, 60];
+console.log(arr[2]);
+for (var i = 0; i <= arr.length - 1; i++) {
+  console.log("arr", i, arr[i]);
 }
 
-for(let j in arr) {
-    console.log('for in', j,arr[j])
+// for in
+for (let j in arr) {
+  console.log("for in", j, arr[j]);
 }
 
 // for of loop
-for(let value of arr) {
-    console.log('for of',value)
+for (let value of arr) {
+  console.log("for of", value);
 }
 
 var object = {
-    name: "suman",
+  name: "suman",
   id: 1,
   isReactDeveloper: true,
-}
+};
 
-for(let [key,value] of Object.entries(object)) {
-    console.log('objValue',key, value, Object.entries(object))
+console.log(object["name"], object.name);
+// [['name', 'suman'], ['id', 1], ['isReactDeveloper', true]]
+
+for (let [key, value] of Object.entries(object)) {
+  console.log("objValue", key, value, Object.entries(object));
 }

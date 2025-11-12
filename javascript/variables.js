@@ -7,7 +7,7 @@ var isPopUpOpen;
 
 // i = 'i';
 
-isPopUpOpen = null;
+isPopUpOpen = 12;
 
 console.log(isPopUpOpen, typeof i);
 
@@ -19,6 +19,7 @@ var suman = 'suman'
 var covertStringIntoBoolean = () => {}
 
 const PI = 3.14;
+const PI_FULL_VALUE = 3.1415;
 
 if (isPopUpOpen) {
     console.log('popup is opened');
@@ -37,16 +38,19 @@ i = 0;
 
 
 
-// kabab case --> is-pop-up-open
-// camel case --> isPopUpOpen
-// snake case --> is_pop_up_open
+// kabab case --> is-pop-up-open (html)
+// camel case --> isPopUpOpen 
+// snake case --> is_pop_up_open 
 
 // DataTypes: Number, boolean, string, undefined, null, Symbol(ES 2015), BigInt(ES 2020)
 
 
 // Matematical Operators
 
-console.log('output', 2 + 3); // add
+var someValue = 130;
+someValue = null;
+
+console.log('output', 2 + 3, -Infinity, +Infinity, true, false, '', "", someValue); // add
 console.log('output', 2 - 3); // subtraction
 console.log('output', 2 * 3); // multiplication
 console.log('output', 2 / 3); // divident
@@ -72,9 +76,11 @@ console.log('var output', a % b);
 
 console.log((1==1) && (1==2) && (1==3)) // logical AND (all values are true then output is true)
 console.log((1==1) || (1==2)) // logical OR (any one value is ture then output is true)
+console.log(!(1==1)) // logical Not
 
 // comparision operators
-console.log(1 == 1); // equal to operator
+console.log(1 == '1'); // equal to operator //true
+console.log(1 === '1') // strict equal to operator // false
 console.log(a <= 3); // less than or equal
 console.log(a < 3); // less than
 console.log(a > 3); // greater than
